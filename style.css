@@ -7,45 +7,18 @@ body {
     height: 100vh;
     margin: 0;
 }
-/*
+
 .slider-container {
     position: relative;
-    max-width: 800px;
+    width: 800px;       
+    height: 400px;      
     overflow: hidden;
     border-radius: 10px;
     background: #000;
 }
 
-.slider {
-    position: relative;
-}
-
-#slider-image {
-    width: 100%;
-    height: 400px;
-    object-fit: contain;
-    display: block;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-}
 
 
-#caption {
-    text-align: center;
-    padding: 10px;
-    background: #111;
-    color: #fff;
-    font-size: 14px;
-}
-*/
-.slider-container {
-    position: relative;
-    width: 800px;      
-    height: 400px;
-    overflow: hidden;
-    border-radius: 10px;
-    background: #000;
-}
 
 .slider {
     position: relative;
@@ -113,4 +86,23 @@ body {
 
 .dot.active {
     background-color: #100f0f;
+}
+@media (max-width: 768px){
+  .slider-container{
+    width: 300px;
+    height: 200px;
+  }
+  #caption{
+    font-size: 10px;
+    padding: 5px;
+  }
+  .prev-btn,
+  .next-btn{
+    padding: 5px;
+    font-size: 10px;
+  }
+  .dot{
+    height: 8px;
+    width: 8px;
+  }
 }
